@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Diagnosis Mandiri</title>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="donasi.html">Donasi</a>
+            <a href="informasi.html">Informasi</a>
+            <a href="kontak.html">Kontak Gugus Tugas</a>
+        </nav>
+    </head>
+<body style= "background-image : url(image/background2.jpg);">
+	<h2 align="center">PENGECEKAN DAN PENGISIAN DATA DIRI SECARA MANDIRI</h2>
+	<form action="formulir.php" method="POST">
+	<table cellpadding= "7" align="center" border="0"  width= "70%" cellpadding="0" cellspacing="0" >
+		<tr style="background-color: Blue; color: white;">
+			<td colspan="3" align="center"><b>PENGISIAN DATA DIRI DAN CEK GEJALA CORONA MANDIRI</b></td>
+			<td align="center"><b></b></td>
+		</tr>
+		<tr>
+			<td>Nama Lengkap</td>
+			<td></td>
+			<td><input width= "100%" type="text" name="namalengkap"></td>
+		</tr>
+		<tr>
+			<td>Tempat/Tanggal Lahir</td>
+			<td></td>
+			<td><input type="text" name="ttl"></td>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin</td>
+			<td></td>
+			<td><input type="text" name="jeniskelamin"></td>
+		</tr>
+		<tr>
+			<td>Alamat</td>
+			<td></td>
+			<td><input type="text" name="alamat"></td>
+		</tr>
+		<tr>
+            <td>Provinsi</td>
+            <td></td>
+			<td><input type="text" name="provinsi"></td>
+		</tr>
+		<tr>
+			<td>Status Pendidikan:</td>
+			<td></td>
+			<td>
+				<select name="Status">
+				<option value="TK">TK</option>
+				<option value="SD">SD</option>
+				<option value="SMP">SMP</option>
+				<option value="SMA">SMA</option>
+				<option value="D1">D1</option>
+				<option value="D2">D2</option>
+				<option value="D3">D3</option>
+				<option value="S1/D4">S1/D4</option>
+				<option value="S2">S2</option>
+				<option value="S3">S3</option>
+			</td>
+			</select>
+		</tr>
+		<tr>
+			<td>Email Aktif</td>
+			<td></td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <td colspan="3" align="center"><b>CEK GEJALA CORONA</b></td>
+        <tr>
+			<td>Apakah Anda Demam Tinggi?:</td>
+			<td></td>
+			<td>
+				<select name="Kondisi">
+				<option value="y">Ya</option>
+				<option value="n">Tidak</option>
+			</td>
+			</select>
+        </tr>
+        <tr>
+			<td>Apakah Anda Batuk Kering?:</td>
+			<td></td>
+			<td>
+				<select name="Kondisi">
+				<option value="y">Ya</option>
+				<option value="n">Tidak</option>
+			</td>
+			</select>
+        </tr>
+        <tr>
+			<td>Apakah Anda Merasa Sulit/Sesak Saat Bernafas?:</td>
+			<td></td>
+			<td>
+				<select name="Kondisi">
+				<option value="y">Ya</option>
+				<option value="n">Tidak</option>
+			</td>
+			</select>
+        </tr>
+        <tr>
+			<td>Apakah Anda Nyeri di Bagian Dada?:</td>
+			<td></td>
+			<td>
+				<select name="Kondisi">
+				<option value="y">Ya</option>
+				<option value="n">Tidak</option>
+			</td>
+			</select>
+        </tr>
+        <tr>
+			<td>Apakah Anda Kehilangan Indra Penciuman?:</td>
+			<td></td>
+			<td>
+				<select name="Kondisi">
+				<option value="y">Ya</option>
+				<option value="n">Tidak</option>
+			</td>
+			</select>
+        </tr>
+		<tr>    
+	</table>
+	<br><br>
+	</form>
+	<form method="POST" align= "center">
+		<input  type="submit" name="submit" value="ENTER" style="background-color: Green ;color: white;">
+	</form>
+</body>
+</html>
